@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
           image.src = originalSrc;
       });
 
-      // Handle dot hover for corresponding image
       dots[index].addEventListener('mouseover', () => {
           image.src = hoverSrc;
       });
@@ -56,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             function countUp(element, target) {
                 let current = 0;
-                const increment = target / 200; // Adjust this value to change the speed
+                const increment = target / 200; 
 
                 const updateNumber = () => {
                     current += increment;
